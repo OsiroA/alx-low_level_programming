@@ -1,15 +1,25 @@
 #include <stdio.h>
 
+/**
+ * main - Entry point
+ *
+ * Return: 0
+ */
+
 int main(void)
 {
-	
-	int i;
-	double d;
+
 	char c;
+	int i;
+	long int l;
+	long long int v;
+	float f;
 
 	printf("The size of an int is: %lu.\n", (unsigned long)sizeof(i));
-	printf ("The size of an double is: %lu.\n", (unsigned long)sizeof(d));
-	printf("The size of an c is: %lu.\n", (unsigned long)sizeof(c));
+	printf("The size of a long int is: %lu.\n", (unsigned long)sizeof(l));
+	printf("The size of a long long int is: %lu.\n", (unsigned long)sizeof(v));
+	printf("The size of a float is: %lu.\n", (unsigned long)sizeof(f));
+	printf("The size of a char is: %lu.\n", (unsigned long)sizeof(c));
 
 	return (0);
 }
