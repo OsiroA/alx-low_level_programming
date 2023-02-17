@@ -7,12 +7,13 @@
  * Return: 0 (Success)
  */
 
-int main()
+int main(void)
 {
 	int a = 0;
 
 	if (a < 10)
 		printf("%d\n", a);
+		a++;
 
 return (0);
 }
