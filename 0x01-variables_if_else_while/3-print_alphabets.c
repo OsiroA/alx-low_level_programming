@@ -11,7 +11,7 @@ int main(void)
 {
 	char c;
 	char d;
-	
+
 	for (c = 'a'; c <= 'z'; c++)
 	{
 		putchar(c);
@@ -21,6 +21,6 @@ int main(void)
 		putchar(d);
 	}
 		putchar('\n');
-		
+
 return (0);
 }
