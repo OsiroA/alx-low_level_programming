@@ -13,8 +13,7 @@ int main(void)
 
 	if (a < 10)
 	{
-		printf("%d\n", a);
-		a++;
+		printf("%i\n", a, a++);
 	}
 
 return (0);
