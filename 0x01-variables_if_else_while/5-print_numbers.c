@@ -11,12 +11,8 @@ int main(void)
 {
 	int a = 0;
 
-	if (a < 10)
-	{
-		printf("%i", a);
-		a++;
-		printf("\n");
-	}
+	for (a = 0; a < 10; a++)
+	printf("%i\n", a);
 
 return (0);
 }
