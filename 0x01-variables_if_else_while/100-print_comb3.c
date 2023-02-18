@@ -17,6 +17,7 @@ int main(void)
 		if (tens != ones)
 		putchar(tens + '0');
 		putchar(ones + '0');
+		else
 		{
 			putchar(',');
 			putchar(' ');
