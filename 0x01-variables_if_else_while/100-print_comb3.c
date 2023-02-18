@@ -19,11 +19,11 @@ int main(void)
 		putchar(tens + '0');
 		putchar(ones + '0');
 	}
-		else
 		{
 			putchar(',');
 			putchar(' ');
 		}
+	else
 	}
 	}
 	putchar('\n');
