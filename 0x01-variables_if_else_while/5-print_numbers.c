@@ -13,7 +13,9 @@ int main(void)
 
 	if (a < 10)
 	{
-		printf("%i\n", a, a++);
+		printf("%i", a);
+		a++;
+		printf("\n");
 	}
 
 return (0);
