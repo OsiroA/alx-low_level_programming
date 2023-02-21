@@ -3,7 +3,7 @@
 /* This program prints _putchar, followed by a new line */
 
 /**
- * main - _putchar
+ * main - Print the string _putchar, one character per line
  *
  * return: 0 (Always)
  */
