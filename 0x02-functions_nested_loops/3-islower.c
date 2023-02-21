@@ -2,7 +2,8 @@
 /* This function checks for lowercase character*/
 /**
  * _islower - Checks for lowercase characters
- * c - a variable
+ *
+ * @c: an integer
  *
  * Return: 0
  */
