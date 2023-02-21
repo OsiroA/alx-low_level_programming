@@ -10,13 +10,8 @@
 
 int print_last_digit(int r)
 {
-	if (r >= 0 && r <= 9)
-	{
-		return (r);
-	}
-	else
-	{
-		return(print_last_digit(r));
-	}
-	return (0);
+	r = r % 10;
+	return (r);
+
+return (0);
 }
