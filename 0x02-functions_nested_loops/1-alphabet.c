@@ -4,13 +4,14 @@
 /**
  * main - Entry point
  *
- * print_alphabet() - prints alphabet in lowercase
+ * print_alphabet - prints alphabet in lowercase
  *
  * Return: 0 (Always Success)
  */
 void print_alphabet(void)
 {
 	int f;
+
 	for (f = 'a'; f <= 'z'; f++)
 	{
 	if (f <= 'z')
