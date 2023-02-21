@@ -8,11 +8,8 @@
  * Return: 0 (Success)
  */
 
-int _abs(int)
+int _abs(int r)
 {
-	int r;
-
-	r = _abs(int);
 	_putchar (r);
 
 	return (0);
