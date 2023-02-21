@@ -8,8 +8,8 @@
  */
 void print_alphabet(void)
 {
-	char a = 'a'
-	char z = 'z'
+	char a = 'a';
+	char z = 'z';
 
 	if (a <= z)
 	{
@@ -17,5 +17,4 @@ void print_alphabet(void)
 		a++;
 	}
 	_putchar('\n');
-	return (0);
 }
