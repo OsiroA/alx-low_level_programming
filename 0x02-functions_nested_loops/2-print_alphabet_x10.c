@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 
 /*This program prints 10 times the alphabets*/
 /**
@@ -10,6 +10,7 @@
 void print_alphabet_x10(void)
 {
 	int i;
+
 	for (i = 'a'; i <= 'z'; i++)
 	{
 		if (i <= 'z')
