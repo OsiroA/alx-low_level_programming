@@ -5,7 +5,7 @@
  *
  * @r: an integer
  *
- * Return: Always 0
+ * Return: last digit
  */
 
 int print_last_digit(int r)
@@ -14,12 +14,12 @@ int print_last_digit(int r)
 	if (r < 0)
 	{
 		r = r * -1;
-		return (r);
+		_putchar ('0' + r);
 	}
 	else
 	{
-		return (r);
+		return ('0' + r);
 	}
 
-return (0);
+return (r);
 }
