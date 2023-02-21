@@ -3,8 +3,7 @@
 /* This program prints _putchar, followed by a new line */
 
 /**
- * _putchar - Entry point
- *
+ * main - _putchar
  *
  * return: 0 (Always)
  */
