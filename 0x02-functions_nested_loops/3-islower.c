@@ -8,16 +8,13 @@
 
 int _islower(int c)
 {
-	int c;
 
 	for (c = 'a'; c <= 'z'; c++)
 	{
-		_putchar(1);
-	for (c = 'A'; c <= 'Z'; c++)
+		return(1);
+		else
 	{
-		_putchar(0);
+		return(0);
 	}
 	}
-	
-	return (int);
 }
