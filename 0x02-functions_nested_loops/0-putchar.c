@@ -10,6 +10,13 @@
 
 int main(void)
 {
+	char l[] = {main};
+	int i;
+
+	for (i = 0; i < 9; i++)
+	{
+		_putchar(l[i]);
+	}
 	putchar("_putchar \n");
 	return (0);
 }
