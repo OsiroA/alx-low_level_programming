@@ -3,7 +3,7 @@
 /**
  * _abs - this function prints the absolute value
  *
- * int: integer value
+ * int r: integer value
  *
  * Return: 0 (Success)
  */
