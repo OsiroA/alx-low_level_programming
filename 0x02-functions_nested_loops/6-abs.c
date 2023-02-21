@@ -10,9 +10,14 @@
 
 int _abs(int r)
 {
-	y = _abs(int r);
-
-	_putchar (y);
-
+	if (r < 0)
+	{
+		r = r * -1;
+		return (r);
+	}
+	else
+	{
+		return (r);
+	}
 	return (0);
 }
