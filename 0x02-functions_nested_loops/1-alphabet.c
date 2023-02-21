@@ -4,6 +4,8 @@
 /**
  * main - Entry point
  *
+ * print_alphabet() - prints alphabet in lowercase
+ *
  * Return: 0 (Always Success)
  */
 void print_alphabet(void)
@@ -13,8 +15,7 @@ void print_alphabet(void)
 
 	if (a <= z)
 	{
-		_putchar(a);
-		a++;
+		_putchar(a, a++);
 	}
 	print_alphabet();
 	_putchar('\n');
