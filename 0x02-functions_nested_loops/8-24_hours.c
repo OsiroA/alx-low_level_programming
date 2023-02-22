@@ -8,11 +8,23 @@
 
 void jack_bauer(void)
 {
-	int i = 00:00;
+	int H, h, M, m;
 
-	while( i < 24:00)
+	for (H = 0; H <= 2; H++)
 	{
-		_putchar (i);
-		i++
+		for (h = 0, h <= 3, h++)
+		{
+			for (M = 0, M <= 5, M++)
+			{
+				for (m = 0, m <= 9, m++)
+				{
+					_putchar (H);
+					_putchar (h);
+					_putchar (:);
+					_putchar (M);
+					_putchar (m);
+				}
+			}
+		}
 	}
 }
