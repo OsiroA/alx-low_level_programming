@@ -22,6 +22,7 @@ void times_table(void)
 				u = z % 10;
 				d = (z - u) / 10;
 
+				_putchar (',');
 				_putchar (' ');
 				_putchar (d + '0');
 				_putchar (u + '0');
@@ -30,7 +31,6 @@ void times_table(void)
 			{
 				if (y != 8)
 				{
-					_putchar (',');
 					_putchar (' ');
 					_putchar (' ');
 				}
