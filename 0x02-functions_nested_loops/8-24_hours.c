@@ -12,17 +12,17 @@ void jack_bauer(void)
 
 	for (H = 0; H <= 2; H++)
 	{
-		for (h = 0, h <= 3, h++)
+		for (h = 0; h <= 3; h++)
 		{
-			for (M = 0, M <= 5, M++)
+			for (M = 0; M <= 5; M++)
 			{
-				for (m = 0, m <= 9, m++)
+				for (m = 0; m <= 9; m++)
 				{
-					_putchar (H);
-					_putchar (h);
-					_putchar (:);
-					_putchar (M);
-					_putchar (m);
+					_putchar ('0' + H);
+					_putchar ('0' + h);
+					_putchar (':');
+					_putchar ('0' + M);
+					_putchar ('0' + m);
 				}
 			}
 		}
