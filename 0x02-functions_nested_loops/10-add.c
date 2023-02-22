@@ -10,9 +10,5 @@
 
 int add(int a, int b)
 {
-	int y = add(a,b);
-
-	_putchar (y);
-
-return (0);
+	return (a + b);
 }
