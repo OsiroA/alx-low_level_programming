@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 /* This program prints natural nummbers till 98 */
 /**
  * print_to_98 - prints all natural numbers tll 98
