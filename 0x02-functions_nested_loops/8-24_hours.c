@@ -8,12 +8,11 @@
 
 void jack_bauer(void)
 {
-	int i = 00:00
-	
+	int i = 00:00;
+
 	while( i < 24:00)
 	{
 		_putchar (i);
 		i++
 	}
-	return 0;
 }
