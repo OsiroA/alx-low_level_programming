@@ -13,11 +13,10 @@ int _strcmp(char *s1, char *s2)
 	for (letter = 0; (s1[letter] != '\0' || s2[letter] != '\0'); letter++)
 	{
 		if (s1[letter] != s2[letter])
-			{
+		{
 				PresenceOfDifference++;
 				return (s1[letter] - s2[letter]);
-				break;
-			}
+		}
 	}
 	return (0);
 }
