@@ -14,8 +14,8 @@ int _strcmp(char *s1, char *s2)
 	{
 		if (s1[letter] != s2[letter])
 		{
-				PresenceOfDifference++;
-				return (s1[letter] - s2[letter]);
+			PresenceOfDifference++;
+			return (s1[letter] - s2[letter]);
 		}
 	}
 	return (0);
