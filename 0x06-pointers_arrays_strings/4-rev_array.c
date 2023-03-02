@@ -1,21 +1,15 @@
 #include "main.h"
 /**
  * reverse_array - This program prints the contents of an array in reverse
- * @a: a pointer to an integer
- * @n: an integer
+ * @a: an array of integers
+ * @n: number of integers in the array
  * Return: 0
  */
 void reverse_array(int *a, int n)
 {
-	int letter = 0;
-	int length = 0;
+	int letter;
 	int placeholder;
 
-	while (*a != '\0')
-	{
-		a++;
-		length++;
-	}
 	for (letter = 0; letter < n--; letter++)
 	{
 		placeholder = a[letter];
