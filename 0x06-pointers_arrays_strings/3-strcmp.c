@@ -14,13 +14,10 @@ int _strcmp(char *s1, char *s2)
 	{
 		if (s1[letter] != s2[letter])
 			{
-				PresenceOfDifference = 1;
+				PresenceOfDifference++;
+				return (s1[letter] - s2[letter]);
 				break;
 			}
-	}
-	if (PresenceOfDifference == 1)
-	{
-		_putchar ('0');
 	}
 	return (0);
 }
