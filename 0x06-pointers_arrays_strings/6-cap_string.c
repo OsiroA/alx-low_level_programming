@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * cap_string - This function capitalizes the first letter 
+ * cap_string - This function capitalizes the first letter
  * of all the words in the string
- * @str - The string whose words are to be captitalized
+ * @str: The string whose words are to be captitalized
  * Return: 0
  */
 char *cap_string(char *str)
