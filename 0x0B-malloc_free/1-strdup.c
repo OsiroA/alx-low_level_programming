@@ -21,10 +21,9 @@ char *_strdup(char *str)
 	if (strcopy == NULL)
 		return (NULL);
 	/* This part is to copy str into the new string strcopy */
-	while (str[i] != '\0')
+	for (i = 0; i <= len; i++)
 	{
 		strcopy[i] = str[i];
-		i++;
 	}
 	return (strcopy);
 }
