@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stddef.h>
 #include <stdlib.h>
 /**
  * _strdup - This function returns a pointer to a newly allocated space in
@@ -13,11 +12,13 @@ char *_strdup(char *str)
 	int i;
 	int len;
 
+	if (str == NULL)
+		return (NULL);
 	/* I want to get the length of str to allocate space to its duplicate*/
 	for (len = 0; str[len] != '\0'; len++)
 		;
 	strcopy = malloc(sizeof(char) * (len + 1));
-	if (str == NULL)
+	if (strcopy == NULL)
 		return (NULL);
 	/* This part is to copy str into the new string strcopy */
 	while (str[i] != '\0')
