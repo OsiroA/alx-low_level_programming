@@ -22,12 +22,10 @@ char *argstostr(int ac, char **av)
 	for (a = 0; a < ac; a++)
 	{
 		for (b = 0; av[a][b] != '\0'; b++)
-		{
 			length++;
 		length++; /* to add the space for the null byte */
-		}
-		length++;
 	}
+	length++;
 	/* Allocate the memory for the length and new line for each word */
 	strcopy = malloc(sizeof(char) * length);
 	if (strcopy == NULL)
