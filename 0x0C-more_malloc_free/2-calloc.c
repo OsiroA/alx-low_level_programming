@@ -20,5 +20,5 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	/* To set the memory to zero(0) */
 	for (a = 0; newarray[a] != '\0'; a++)
 		newarray[a] = 0;
-	return (newarray);
+	return ((void *)newarray);
 }
