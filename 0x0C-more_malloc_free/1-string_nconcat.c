@@ -19,14 +19,15 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == NULL)
 		s2 = "";
 	/* Get length of s1, n is length of s2 to be used */
-	for (a = 0; s1[a] != '\0'; a++)
+	a = 0;
+	while (s1[a] != '\0')
 		a++;
 	/* Allocate the memory for the new string */
 	newstring = malloc(sizeof(char) * (a + n + 1));
 	/* 1 above is used to represent the terminating character */
 	if (newstring == NULL)
 		return (NULL);
-	a = 0;
+	a = b = 0;
 	while (s1[a] != '\0')
 	{
 		newstring[a] = s1[a];
