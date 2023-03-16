@@ -9,7 +9,7 @@ int main(void)
 {
 	int mul, argc = 0, num1 = 0, num2 = 0;
 
-	if (argc < 2)
+	if (num1 == '\0' || num2 == '\0')
 	{
 		printf("Error\n");
 		exit(98);
