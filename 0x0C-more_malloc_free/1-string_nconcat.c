@@ -10,12 +10,9 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int a, lenA;
+	int a;
 	unsigned int b;
 	char *newstring;
-
-	lenA = 0;
-	a = 0;
 
 	if (s1 == NULL)
 		s1 = "";
@@ -23,18 +20,19 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s2 = "";
 	/* Get length of s1, n is length of s2 to be used */
 	for (a = 0; s1[a] != '\0'; a++)
-		lenA++;
+		a++;
 	/* Allocate the memory for the new string */
-	newstring = malloc(sizeof(char) * lenA + n + 1);
+	newstring = malloc(sizeof(char) * (a + 1));
 	/* 1 above is used to represent the terminating character */
 	if (newstring == NULL)
 		return (NULL);
+	a = 0;
 	while (s1[a] != '\0')
 	{
 		newstring[a] = s1[a];
 		a++;
 	}
-	while (b < n && s2[b] != '\0')
+	while (b <= n && s2[b] != '\0')
 	{
 		newstring[a] = s2[b];
 		a++, b++;
