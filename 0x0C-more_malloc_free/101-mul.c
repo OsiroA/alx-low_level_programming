@@ -14,7 +14,7 @@ int main(void)
 		printf("Error\n");
 		exit(98);
 	}
-	if (((num1 >= 'a') && (num1 <= 'z')) || ((num2 >= 'a' && num2 <= 'z')))
+	if (!isdigit(num1) || !isdigit(num2))
 	{
 		printf("Error\n");
 		exit(98);
