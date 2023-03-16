@@ -22,7 +22,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (a = 0; s1[a] != '\0'; a++)
 		a++;
 	/* Allocate the memory for the new string */
-	newstring = malloc(sizeof(char) * (a + 1));
+	newstring = malloc(sizeof(char) * (a + n + 1));
 	/* 1 above is used to represent the terminating character */
 	if (newstring == NULL)
 		return (NULL);
@@ -32,7 +32,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		newstring[a] = s1[a];
 		a++;
 	}
-	while (b <= n && s2[b] != '\0')
+	while (b < n && s2[b] != '\0')
 	{
 		newstring[a] = s2[b];
 		a++, b++;
