@@ -3,7 +3,6 @@
 #include <stdlib.h>
 /**
  * main - Entry point
- * @argc: argument counter
  * Return: 0 or NULL
  */
 int main(void)
