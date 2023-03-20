@@ -29,7 +29,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 	/* make a copy of name and owner */
-	for (a = 0; a < namelength; a++)
+	for (a = 0; a <= namelength; a++)
 	{
 		newDog->name[a] = name[a];
 	}
@@ -40,7 +40,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(newDog);
 		return (NULL);
 	}
-	for (a = 0; a < ownerlength; a++)
+	for (a = 0; a <= ownerlength; a++)
 	{
 		newDog->owner[a] = owner[a];
 	}
