@@ -9,12 +9,8 @@
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	unsigned int a;
-
 	va_list numbers;
-
-	if (separator == NULL)
-		return;
+	unsigned int a;
 
 	va_start(numbers, n);
 
