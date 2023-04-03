@@ -20,5 +20,7 @@ int pop_listint(listint_t **head)
 		*head = atm->next;
 		free(new);
 	}
+	else
+		a = 0;
 	return (a);
 }
