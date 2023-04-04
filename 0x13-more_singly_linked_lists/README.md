@@ -44,4 +44,12 @@ Write a function that inserts a new node at a given position.
 mandatory
 Write a function that deletes the node at index index of a listint_t linked list.
 
+11. Reverse list
+#advanced
+Write a function that reverses a listint_t linked list.
 
+Prototype: listint_t *reverse_listint(listint_t **head);
+Returns: a pointer to the first node of the reversed list
+You are not allowed to use more than 1 loop.
+You are not allowed to use malloc, free or arrays
+You can only declare a maximum of two variables in your function
