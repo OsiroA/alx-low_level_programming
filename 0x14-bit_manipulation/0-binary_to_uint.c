@@ -19,22 +19,15 @@ unsigned int binary_to_uint(const char *b)
 		b++;
 		count++;
 	}
+	if (b == NULL)
+		return (0);
 	b -= count;
 	while (b[a] != '\0')
 	{
-		/**
-		*eachnum = *b - '0';
-		*decimal += eachnum * (1 << (count - 1));
-		*b++;
-		*count--;
-		*/
-		if (b[a] == '0' || b[a] == '1')
-		{
-			decimal = decimal << 1;
-			if (b[a] == '1')
-				decimal = decimal | 1;
-			a++;
-		}
-	}	
+		eachnum = *b - '0';
+		decimal += eachnum * (1 << (count - 1));
+		b++;
+		count--;
+	}
 	return (decimal);
 }
