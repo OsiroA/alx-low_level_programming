@@ -7,7 +7,7 @@
 */
 unsigned int binary_to_uint(const char *b)
 {
-	int count = 0;
+	int count = 0, a = 0;
 	unsigned int decimal = 0;
 	int eachnum;
 
@@ -20,12 +20,21 @@ unsigned int binary_to_uint(const char *b)
 		count++;
 	}
 	b -= count;
-	while (*b != '\0')
+	while (b[a] != '\0')
 	{
-		eachnum = *b - '0';
-		decimal += eachnum * (1 << (count - 1));
-		b++;
-		count--;
-	}
+		/**
+		*eachnum = *b - '0';
+		*decimal += eachnum * (1 << (count - 1));
+		*b++;
+		*count--;
+		*/
+		if (b[a] == '0' || b[a] == '1')
+		{
+			decimal = decimal << 1;
+			if (b[a] == '1')
+				decimal = decimal | 1;
+			a++;
+		}
+	}	
 	return (decimal);
 }
