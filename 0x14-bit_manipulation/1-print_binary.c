@@ -7,23 +7,25 @@
 */
 void print_binary(unsigned long int n)
 {
-	unsigned int binary = 1;
 	int a = 0;
+	unsigned long int base = 1;
 
-	while (binary <= n)
+	/* base = base << (sizeof(unsigned long int) * 8 - 1);*/
+
+	while (base <= n)
 	{
-		binary = binary << 1;
+		base = base << 1;
 	}
-	binary = binary >> 1;
-	if (binary == 0)
+	base = base >> 1;
+	if (base == 0)
 		_putchar('0');
-	while (binary > 0)
+	while (base > 0)
 	{
-		a = n & binary;
+		a = n & base;
 		if (a > 0)
 			_putchar('1');
 		else
 			_putchar('0');
-		binary = binary >> 1;
+		base = base >> 1;
 	}
 }
