@@ -10,22 +10,33 @@ void print_binary(unsigned long int n)
 	int a = 0;
 	unsigned long int base = 1;
 
-	/* base = base << (sizeof(unsigned long int) * 8 - 1);*/
+	/*base = base << (sizeof(unsigned long int) * 8 - 1);*/
 
+	if (base == 0)
+		_putchar('0');
 	while (base <= n)
 	{
 		base = base << 1;
 	}
 	base = base >> 1;
-	if (base == 0)
-		_putchar('0');
+
 	while (base > 0)
 	{
-		a = n & base;
-		if (a > 0)
-			_putchar('1');
+		/* a = n & base;*/
+		if ((n & base) == 0)
+		{
+			if (a)
+			{
+				_putchar('0');
+			}
+		}
 		else
-			_putchar('0');
+		{
+			_putchar('1');
+			a = 1;
+		}
 		base = base >> 1;
 	}
+	if (!a)
+		_putchar('0');
 }
