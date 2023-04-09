@@ -11,15 +11,15 @@ void print_binary(unsigned long int n)
 	unsigned long int base;
 
 	base = 1UL << (sizeof(unsigned long int) * 8 - 1);
-
-	if (base == 0)
-		_putchar('0');
-	while (base <= n)
-	{
-		base = base << 1;
-	}
-	base = base >> 1;
-
+	/**
+	*if (base == 0)
+	*	_putchar('0');
+	*while (base <= n)
+	*{
+	*	base = base << 1;
+	*}
+	*base = base >> 1;
+	*/
 	while (base > 0)
 	{
 		/* a = n & base;*/
