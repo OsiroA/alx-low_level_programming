@@ -8,9 +8,9 @@
 void print_binary(unsigned long int n)
 {
 	int a = 0;
-	unsigned long int base = 1;
+	unsigned long int base;
 
-	/*base = base << (sizeof(unsigned long int) * 8 - 1);*/
+	base = 1UL << (sizeof(unsigned long int) * 8 - 1);
 
 	if (base == 0)
 		_putchar('0');
