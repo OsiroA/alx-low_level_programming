@@ -3,7 +3,7 @@
 #include <sys/types.h>
 #include <stdio.h>
 /**
-* read_textfile - This function reads a text file and prints it to the 
+* read_textfile - This function reads a text file and prints it to the
 * POSIX standard output
 * @filename: a pointer to the file to be read
 * @letters: the number of characters to be read
