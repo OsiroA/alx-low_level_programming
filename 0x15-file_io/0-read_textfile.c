@@ -1,4 +1,7 @@
 #include "main.h"
+#include <unistd.h>
+#include <fcntl.h>
+#include <sys/stat.h>
 #include <stdlib.h>
 #include <sys/types.h>
 #include <stdio.h>
@@ -11,42 +14,42 @@
 */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	FILE *filepointer;
-	ssize_t letterscopied, lettersread;
+	int filepointer, lettersread;
+	ssize_t letterscopied;
 	char *outputfile;
 
 	if (filename == NULL)
 		return (0);
 
-	filepointer = fopen(filename, "r");
-	if (filepointer == NULL)
+	filepointer = open(filename, O_RDONLY);
+	if (filepointer == -1)
 		return (0);
 
-	outputfile = malloc(sizeof(char) * letters + 1);
+	outputfile = malloc(sizeof(char) * letters);
 	if (outputfile == NULL)
 	{
-		fclose(filepointer);
+		close(filepointer);
 		return (0);
 	}
 
-	lettersread = fread(outputfile, sizeof(char), letters, filepointer);
+	lettersread = read(filepointer, outputfile, letters);
 	if (lettersread == -1)
 	{
 		free(outputfile);
-		fclose(filepointer);
+		close(filepointer);
 		return (0);
 	}
-	outputfile[lettersread] = '\0';
-	letterscopied = fwrite(outputfile, sizeof(char), lettersread, stdout);
+	/* outputfile[lettersread] = '\0';*/
+	letterscopied = write(STDOUT_FILENO, outputfile, lettersread);
 
 	if (letterscopied == -1 || lettersread != letterscopied)
 	{
 		free(outputfile);
-		fclose(filepointer);
+		close(filepointer);
 		return (0);
 	}
 	free(outputfile);
-	fclose(filepointer);
+	close(filepointer);
 
 	return (letterscopied);
 }
