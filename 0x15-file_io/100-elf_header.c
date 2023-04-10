@@ -7,7 +7,6 @@
  * Return: 0 or 1
  */
 int main(int naac, char *naav[])
-{
-	return (1);
-	return (0);
+{	
+	return (naac);
 }
