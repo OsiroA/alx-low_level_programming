@@ -30,7 +30,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 
 	lettersread = fread(outputfile, sizeof(char), letters, filepointer);
-	if (lettersread == 0)
+	if (lettersread == -1)
 	{
 		free(outputfile);
 		fclose(filepointer);
@@ -39,7 +39,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	outputfile[lettersread] = '\0';
 	letterscopied = fwrite(outputfile, sizeof(char), lettersread, stdout);
 
-	if (letterscopied == 0 || lettersread != letterscopied)
+	if (letterscopied == -1 || lettersread != letterscopied)
 	{
 		free(outputfile);
 		fclose(filepointer);
