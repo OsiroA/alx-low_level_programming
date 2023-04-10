@@ -22,7 +22,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (filepointer == NULL)
 		return (0);
 
-	outputfile = malloc(sizeof(char) * letters);
+	outputfile = malloc(sizeof(char) * letters + 1);
 	if (outputfile == NULL)
 	{
 		fclose(filepointer);
@@ -36,6 +36,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		fclose(filepointer);
 		return (0);
 	}
+	outputfile[lettersread] = '\0';
 	letterscopied = fwrite(outputfile, sizeof(char), lettersread, stdout);
 
 	if (letterscopied == 0 || lettersread != letterscopied)
