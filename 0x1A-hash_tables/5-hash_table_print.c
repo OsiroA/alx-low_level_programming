@@ -1,10 +1,7 @@
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
 #include "hash_tables.h"
 /**
- * hash_table_print - prints a hash table.
- * @ht: hash table to print
+ * hash_table_print - prints a hash table soecifued
+ * @ht: hash table to br printed
  *
  * Return: void
  */
